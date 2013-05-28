@@ -12,7 +12,3 @@
 ![FrozenJS](img/frozen.png)
 # frozenjs.com
 
---
-
-# hackPHX.com
-![hackPHX](img/hackphx.jpg)

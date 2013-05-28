@@ -16,13 +16,17 @@
 
 # Keyboard
 ```javascript
-//do stuff
+if(im.keyActions[keys.LEFT_ARROW].isPressed()){
+	//move the player to the left
+}
+
 ```
 --
 
 # Mouse / Touch
 ```javascript
-//mouse / touch code
+//mobile first :)
+var position = im.touchAction.position || im.mouseAction.position;
 ```
 
 --
@@ -41,11 +45,10 @@
 --
 # Gamepads
 ```javascript
-//gamepad detection
+navigator.webkitGetGamepads();
 ```
 --
 # Gamepad Polling
-```javascript
-//gamepad polling
-```
-[Demo](demos/gamepad/index.html)
+
+## Just check the gamepad state.
+[Demo](http://www.html5rocks.com/en/tutorials/doodles/gamepad/gamepad-tester/tester.html)

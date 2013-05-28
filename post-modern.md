@@ -4,7 +4,9 @@
 # Phone as a Gamepad
 ![Apple](img/apple-logo.png) ![Android](img/android-logo.png)
 ## There's an app for that...
-
+<aside class="notes">
+  yay itunes, yay google play
+</aside>
 
 --
 # It's called a Browser
@@ -32,9 +34,9 @@
 
 # Web Speech API
 ```javascript
-//hamer code
+new webkitSpeechRecognition();
 ```
-[Demo](demos/voicecat/index.html)
+[Demo](https://googledrive.com/host/0By0fqh2gf1M7MjhtOUhISjZHUFE/)
 
 --
 # 3D Tracking
@@ -51,9 +53,13 @@
 --
 ## leap.js
 ```javascript
-//leap example
+  var controller = new Leap.Controller({enableGestures:true});
+  controller.on('frame', function(frame) {
+    game.pointables = frame.pointables;
+  });
+  controller.connect();
 ```
-[Demo](demos/leapmotion/index.html)
+[Demo](http://localhost:8081/)
 
 --
 ## But I want to wear a controller...
